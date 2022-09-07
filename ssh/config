@@ -1,0 +1,10 @@
+Host git.taservs.net
+	HostName git.taservs.net
+	User plong
+	IdentityFile ~/.ssh/id_rsa
+	IdentitiesOnly yes
+Host github.com
+	hostName github.com
+	User paulelong
+	IdentityFile ~/.ssh/id_rsa_github
+	IdentitiesOnly yes

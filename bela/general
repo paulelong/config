@@ -1,0 +1,7 @@
+# Create my home dir
+cd /home
+md paul
+
+
+# Create bin direcotry
+md /home/paul

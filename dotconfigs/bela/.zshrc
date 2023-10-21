@@ -21,7 +21,8 @@ DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
-echo -n -e "\033]0;Bela 2\007"
+sysname=$(<~/.config/system_name)
+echo -n -e "\033]0;$sysname\007"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -54,7 +55,7 @@ export LESS=-iXFR
 
 hrm() { cd /home/paul/src/HarmProject/HarmP1; git status }
 
-export PATH=$PATH:/home/paul/bin
+export PATH=$PATH:~/bin
 export TERM=xterm
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_ed25519

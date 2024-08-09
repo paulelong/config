@@ -28,7 +28,7 @@ echo -n -e "\033]0;$sysname\007"
 # ENABLE_CORRECTION="true"
 
 # Which plugins would you like to load?
-plugins=(git zsh-autosuggestions dirhistory)
+plugins=(git zsh-autosuggestions ssh-agent dirhistory)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,6 +57,7 @@ hrm() { cd /home/paul/src/HarmProject/HarmP1; git status }
 
 export PATH=$PATH:~/bin
 export TERM=xterm
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_ed25519
+# ssh-add ~/.ssh/id_ed25519
 export SC_PATH=/usr/bin
+export HarmProjectPath="/root/src/HarmProject"
+export USER_EXTENSION_DIR="/root/.local/share/SuperCollider/Extensions"
